@@ -24,8 +24,8 @@ Examples:
 
     
 Scenario Outline: Verify radio button selection
-    When I select the "<Impressive>" radio button
-    Then The "<Impressive>" radio button should be selected
+    When I select the "<Yes>" radio button
+    Then The "<Yes>" radio button should be selected
 
     Examples:
       | Yes |

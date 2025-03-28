@@ -1,2 +1,12 @@
+stepDefinitions\booking.class
+pom\bookingpage.class
+stepDefinitions\registration.class
+stepDefinitions\logincustomer.class
+runner\RunnerTest.class
+stepDefinitions\shopsteps.class
+pom\shoppingpage.class
+stepDefinitions\hover.class
+stepDefinitions\demoqasets.class
+stepDefinitions\logintest.class
+stepDefinitions\automationbooks.class
 stepDefinitions\jenSteps.class
-runner\testRunner.class
