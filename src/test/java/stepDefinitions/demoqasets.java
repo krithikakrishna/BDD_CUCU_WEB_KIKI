@@ -191,23 +191,26 @@ public void i_select_the_checkbox_should_be_selected(String checkboxName) {
 
 
 @When("I select the {string} radio button")
-public void i_select_the_radio_button(String radioButtonLabel) {
-    WebElement radioButtonSection = driver.findElement(By.xpath("//*[@id='item-2']"));
-    radioButtonSection.click();
+    public void i_select_the_radio_button(String radioButtonLabel) {
+        // Click the section where radio buttons are available
+        WebElement radioButtonSection = driver.findElement(By.xpath("//*[@id='item-2']"));
+        radioButtonSection.click();
 
-    // Locate the label associated with the radio button and click it instead of the input
-    WebElement radioLabel = driver.findElement(By.xpath("//label[text()='" + radioButtonLabel + "']"));
-    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", radioLabel);
-    radioLabel.click();
-}
+        // Locate the label associated with the radio button and click it
+        WebElement radioLabel = driver.findElement(By.xpath("//label[contains(text(),'" + radioButtonLabel + "')]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", radioLabel);
+        radioLabel.click();
+    }
 
-@Then("The {string} radio button should be selected")
-public void the_radio_button_should_be_selected(String radioButtonLabel) {
-    WebElement radioButton = driver.findElement(By.xpath("//label[text()='" + radioButtonLabel + "']/preceding-sibling::input"));
-    Assert.assertTrue("Radio button '" + radioButtonLabel + "' is NOT selected!", radioButton.isSelected());
-    System.out.println("✅ Radio button '" + radioButtonLabel + "' is selected successfully.");
-   
-}
+    @Then("The {string} radio button should be selected")
+    public void the_radio_button_should_be_selected(String radioButtonLabel) {
+        // Locate the radio button input field
+        WebElement radioButton = driver.findElement(By.xpath("//label[contains(text(),'" + radioButtonLabel + "')]/preceding-sibling::input[@type='radio']"));
+        
+        // Validate selection
+        Assert.assertTrue("❌ Radio button '" + radioButtonLabel + "' is NOT selected!", radioButton.isSelected());
+        System.out.println("✅ Radio button '" + radioButtonLabel + "' is selected successfully.");
+    }
 @After
 public void tearDown() {
     if (driver != null) {

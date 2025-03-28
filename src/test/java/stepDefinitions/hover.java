@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -54,28 +55,34 @@ public void i_enter_customers_credentials() {
     addToCart.click();
     System.out.println("Clicked on cart ");
 
-   
 
+    
     try {
-        WebElement notification = driver.findElement(By.id("bar-notification"));
-        
-        // Wait for notification to appear
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(notification));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        if (notification.isDisplayed()) {
-            System.out.println(" Notification is displayed: " + notification.getText());
-        } else {
-            System.out.println(" Notification is NOT displayed");
-        }
-        
-        // Optionally, close the notification
-        WebElement closeButton = notification.findElement(By.className("close"));
-        closeButton.click();
-        System.out.println("Closed notification");
-    } catch (NoSuchElementException e) {
-        System.out.println("Notification not found!");
-    }
+    // Wait for the notification to appear
+    WebElement notification = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bar-notification")));
+    System.out.println("Notification displayed: " + notification.getText());
+
+    // Close the notification if it is still visible
+    WebElement closeButton = notification.findElement(By.className("close"));
+    closeButton.click();
+    System.out.println("Notification closed!");
+
+    // Ensure notification disappears before proceeding
+    wait.until(ExpectedConditions.invisibilityOf(notification));
+    System.out.println("Notification disappeared!");
+
+    // Now click on the cart
+    WebElement goToCart = wait.until(ExpectedConditions.elementToBeClickable(By.id("topcartlink")));
+    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", goToCart);
+    Thread.sleep(500); // Allow UI to settle
+    goToCart.click();
+    System.out.println("Opened shopping cart successfully!");
+} catch (Exception e) {
+    System.out.println("Failed to click shopping cart: " + e.getMessage());
+}
+
 
     WebElement goToCart = driver.findElement(By.id("topcartlink"));
     goToCart.click();
