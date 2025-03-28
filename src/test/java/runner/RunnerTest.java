@@ -7,7 +7,7 @@ import io.cucumber.junit.Cucumber;
  
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features ="src/test/resources",
+        features ="src\\test\\resources",
         glue= {"stepDefinitions"},
         plugin = {"pretty", 
         "html:target/cucumber-reports.html",
@@ -17,6 +17,6 @@ import io.cucumber.junit.Cucumber;
 
         )
 
-public class testRunner {
+public class RunnerTest {
     
 }

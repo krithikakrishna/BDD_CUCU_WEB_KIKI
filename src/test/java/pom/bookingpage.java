@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 
 public class bookingpage {
     
-    public By startDatePath=By.xpath("//button[text()='02']");
+    public By startDatePath=By.xpath("//button[text()='08']");
     public By bookNowPath=By.xpath("//*[@id=\"root\"]/body/div/div/div[4]/div/div/div[3]/button");
-    public By endDatePath=By.xpath("//button[text()='05']");
+    public By endDatePath=By.xpath("//button[text()='11']");
     public By cancelButtonPath =By.xpath("//button[contains(text(), 'Cancel')]");
     public By firstNamePath = By.cssSelector(".form-control.room-firstname");
     public By lastNamePath = By.cssSelector(".form-control.room-lastname");

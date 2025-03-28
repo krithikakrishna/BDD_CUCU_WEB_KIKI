@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="232.916" tests="12" skipped="0" failures="3" errors="0" timestamp="2025-03-27T10:41:03.789752300Z">
-<testcase classname="Test the functionality of automation bookstore" name="Test the filter  operations in automation bookstore" time="13.391">
+<testsuite name="Cucumber" time="178.704" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-03-28T08:11:39.759446300Z">
+<testcase classname="Test the functionality of automation bookstore" name="Test the filter  operations in automation bookstore" time="11.131">
 <system-out><![CDATA[
 Given I enter the url of bookstore..........................................passed
 When I search books.........................................................passed
 Then I can retrive books successfully.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of automation panda" name="Test the booking operations in customer login" time="16.994">
+<testcase classname="Test the functionality of automation panda" name="Test the booking operations in customer login" time="9.236">
 <system-out><![CDATA[
 Given I enter the booking url of domain.....................................passed
 When I enter customer booking dates.........................................passed
@@ -15,7 +15,7 @@ And I enter customer creadentials...........................................pass
 Then I can book successfully................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Site Interaction Testing" name="Verify text box functionality - #1.1" time="26.733">
+<testcase classname="Site Interaction Testing" name="Verify text box functionality - #1.1" time="18.337">
 <system-out><![CDATA[
 Given I navigate to the website.............................................passed
 When I enter "John Doe" in the name text box................................passed
@@ -23,7 +23,7 @@ And I enter "john.doe@example.com" in the email text box....................pass
 Then The text boxes should contain the entered values "John Doe" and "john.doe@example.com".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Site Interaction Testing" name="Verify text box functionality - #1.2" time="24.618">
+<testcase classname="Site Interaction Testing" name="Verify text box functionality - #1.2" time="17.998">
 <system-out><![CDATA[
 Given I navigate to the website.............................................passed
 When I enter "Alice Ray" in the name text box...............................passed
@@ -31,165 +31,61 @@ And I enter "alice.ray@gmail.com" in the email text box.....................pass
 Then The text boxes should contain the entered values "Alice Ray" and "alice.ray@gmail.com".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Site Interaction Testing" name="Select a checkbox - #1.1" time="25.713">
+<testcase classname="Site Interaction Testing" name="Select a checkbox - #1.1" time="17.698">
 <system-out><![CDATA[
 Given I navigate to the website.............................................passed
 When I select the "Home" checkbox...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Site Interaction Testing" name="Verify radio button selection - #1.1" time="35.108">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()='&lt;Impressive&gt;']&quot;}
-  (Session info: chrome=134.0.6998.165)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [811db521c780479833effe22b7b772f9, findElement {value=//label[text()='&lt;Impressive&gt;'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\KKRISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54261/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 811db521c780479833effe22b7b772f9">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='<Impressive>']"}
-  (Session info: chrome=134.0.6998.165)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [811db521c780479833effe22b7b772f9, findElement {value=//label[text()='<Impressive>'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\KKRISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54261/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 811db521c780479833effe22b7b772f9
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at stepDefinitions.demoqasets.i_select_the_radio_button(demoqasets.java:199)
-	at ✽.I select the "<Impressive>" radio button(file:///C:/Users/kkrishnamoorthy/GIT%20Local/BDD_CUCU_WEB_KIKI/src/test/resources/demoqa.feature:27)
-]]>
-</failure>
+<testcase classname="Site Interaction Testing" name="Verify radio button selection - #1.1" time="17.804">
 <system-out><![CDATA[
 Given I navigate to the website.............................................passed
-When I select the "<Impressive>" radio button...............................failed
-Then The "<Impressive>" radio button should be selected.....................skipped
+When I select the "Impressive" radio button.................................passed
+Then The "Impressive" radio button should be selected.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of domain login" name="Test the banking operations in customer login" time="20.673">
+<testcase classname="Test the functionality of domain login" name="Test the banking operations in customers login" time="15.993">
 <system-out><![CDATA[
 Given I enter the url of domains............................................passed
 When I enter customers credentials..........................................passed
 Then I can login domains successfully.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of domain login" name="Test the login operations in customer login" time="11.233">
+<testcase classname="Test the functionality of domain login" name="Test the login operations in customer login" time="10.023">
 <system-out><![CDATA[
 Given I enter the shops login url of domain.................................passed
 When I enter customer login credential......................................passed
 Then I can login shops successfully.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of domain login" name="Test the login operations in customer login" time="14.118">
+<testcase classname="Test the functionality of domain login" name="Test the login operations in customer login" time="10.802">
 <system-out><![CDATA[
 Given I enter the shop login url of domain..................................passed
 When I enter customer login credentials.....................................passed
 Then I can login shop successfully..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of domain login" name="Test the banking operations in customer login" time="16.864">
-<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;li id=&quot;topcartlink&quot;&gt;...&lt;/li&gt; is not clickable at point (966, 9). Other element would receive the click: &lt;div id=&quot;bar-notification&quot; class=&quot;bar-notification success&quot; style=&quot;display: block; opacity: 0.15964;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=134.0.6998.165)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f3fd76b22a7ae2294b2158574fc2535a, clickElement {id=f.7EF177B1B65DDBAA323825B2E76A37D5.d.7A9D42CD741563C4334939FF8E7C5D3D.e.93}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\KKRISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50081}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50081/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f3fd76b22a7ae2294b2158574fc2535a)] -&gt; id: topcartlink]
-Session ID: f3fd76b22a7ae2294b2158574fc2535a">
-<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li id="topcartlink">...</li> is not clickable at point (966, 9). Other element would receive the click: <div id="bar-notification" class="bar-notification success" style="display: block; opacity: 0.15964;">...</div>
-  (Session info: chrome=134.0.6998.165)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f3fd76b22a7ae2294b2158574fc2535a, clickElement {id=f.7EF177B1B65DDBAA323825B2E76A37D5.d.7A9D42CD741563C4334939FF8E7C5D3D.e.93}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\KKRISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50081}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50081/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f3fd76b22a7ae2294b2158574fc2535a)] -> id: topcartlink]
-Session ID: f3fd76b22a7ae2294b2158574fc2535a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at stepDefinitions.logintest.i_enter_customer_credentials(logintest.java:81)
-	at ✽.I enter customer credentials(file:///C:/Users/kkrishnamoorthy/GIT%20Local/BDD_CUCU_WEB_KIKI/src/test/resources/logintest.feature:5)
-]]>
-</failure>
+<testcase classname="Test the functionality of domain login" name="Test the banking operations in customer login" time="15.455">
 <system-out><![CDATA[
 Given I enter the url of domain.............................................passed
-When I enter customer credentials...........................................failed
-Then I can login domain successfully........................................skipped
+When I enter customer credentials...........................................passed
+Then I can login domain successfully........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of domain login" name="Test the web shop operations in customer login" time="10.369">
+<testcase classname="Test the functionality of domain login" name="Test the web shop operations in customer login" time="10.115">
 <system-out><![CDATA[
 Given I enter the registration url of domain................................passed
 When I enter new customer credentials.......................................passed
 Then I can register domain successfully.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of shopping site" name="Adding an item to the cart" time="16.742">
-<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;button type=&quot;submit&quot; title=&quot;Add to Cart&quot; class=&quot;action primary tocart&quot; id=&quot;product-addtocart-button&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (704, 427). Other element would receive the click: &lt;div class=&quot;actions&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=134.0.6998.165)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [819390207ea2c764b361d9702b3c9139, clickElement {id=f.58EFFEA28946364E24C5FD55D5BA7532.d.65BDAEC5EC8EFEC1C2A6A2F2120D12E2.e.51}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\KKRISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65205/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (819390207ea2c764b361d9702b3c9139)] -&gt; id: product-addtocart-button]
-Session ID: 819390207ea2c764b361d9702b3c9139">
-<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" title="Add to Cart" class="action primary tocart" id="product-addtocart-button" disabled="">...</button> is not clickable at point (704, 427). Other element would receive the click: <div class="actions">...</div>
-  (Session info: chrome=134.0.6998.165)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [819390207ea2c764b361d9702b3c9139, clickElement {id=f.58EFFEA28946364E24C5FD55D5BA7532.d.65BDAEC5EC8EFEC1C2A6A2F2120D12E2.e.51}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\KKRISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65205/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (819390207ea2c764b361d9702b3c9139)] -> id: product-addtocart-button]
-Session ID: 819390207ea2c764b361d9702b3c9139
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at stepDefinitions.shopsteps.i_choose_the_size_color_and_quantity(shopsteps.java:68)
-	at ✽.I choose the size, color, and quantity(file:///C:/Users/kkrishnamoorthy/GIT%20Local/BDD_CUCU_WEB_KIKI/src/test/resources/shopping.feature:8)
-]]>
-</failure>
+<testcase classname="Test the functionality of shopping site" name="Adding an item to the cart" time="23.809">
 <system-out><![CDATA[
 Given I navigate to the shopping page.......................................passed
 When I select a product.....................................................passed
-And I choose the size, color, and quantity..................................failed
-And I add the product to the cart...........................................skipped
-Then I should be redirected to the shopping cart page.......................skipped
+And I choose the size, color, and quantity..................................passed
+And I add the product to the cart...........................................passed
+Then I should be redirected to the shopping cart page.......................passed
 ]]></system-out>
 </testcase>
 </testsuite>
