@@ -22,14 +22,15 @@ Examples:
    | Home        |
    
 
-    
-Scenario Outline: Verify radio button selection
-    When I select the "<Yes>" radio button
-    Then The "<Yes>" radio button should be selected
 
-    Examples:
-      | Yes |
-      | Impressive   |
+Scenario Outline: Verify radio button selection
+    When I select the "<radioButtonLabel>" radio button
+    Then The "<radioButtonLabel>" radio button should be selected
+
+Examples:
+      | radioButtonLabel |
+      | Yes             |
+      | Impressive      |
 
 
   

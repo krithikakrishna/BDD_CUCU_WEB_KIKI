@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="178.704" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-03-28T08:11:39.759446300Z">
-<testcase classname="Test the functionality of automation bookstore" name="Test the filter  operations in automation bookstore" time="11.131">
+<testsuite name="Cucumber" time="270.695" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-03-28T15:01:50.812984800Z">
+<testcase classname="Test the functionality of automation bookstore" name="Test the filter  operations in automation bookstore" time="14.861">
 <system-out><![CDATA[
 Given I enter the url of bookstore..........................................passed
 When I search books.........................................................passed
 Then I can retrive books successfully.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of automation panda" name="Test the booking operations in customer login" time="9.236">
+<testcase classname="Test the functionality of automation panda" name="Successfully book a room" time="9.889">
 <system-out><![CDATA[
-Given I enter the booking url of domain.....................................passed
-When I enter customer booking dates.........................................passed
-And I enter customer creadentials...........................................passed
-Then I can book successfully................................................passed
+Given Open the booking application..........................................passed
+When select the room........................................................passed
+And select the date.........................................................passed
+And Enter the details.......................................................passed
+Then Book the ticket........................................................passed
+And Confirm the booking.....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Site Interaction Testing" name="Verify text box functionality - #1.1" time="18.337">
+<testcase classname="Site Interaction Testing" name="Verify text box functionality - #1.1" time="23.224">
 <system-out><![CDATA[
 Given I navigate to the website.............................................passed
 When I enter "John Doe" in the name text box................................passed
@@ -23,7 +25,7 @@ And I enter "john.doe@example.com" in the email text box....................pass
 Then The text boxes should contain the entered values "John Doe" and "john.doe@example.com".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Site Interaction Testing" name="Verify text box functionality - #1.2" time="17.998">
+<testcase classname="Site Interaction Testing" name="Verify text box functionality - #1.2" time="23.91">
 <system-out><![CDATA[
 Given I navigate to the website.............................................passed
 When I enter "Alice Ray" in the name text box...............................passed
@@ -31,55 +33,62 @@ And I enter "alice.ray@gmail.com" in the email text box.....................pass
 Then The text boxes should contain the entered values "Alice Ray" and "alice.ray@gmail.com".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Site Interaction Testing" name="Select a checkbox - #1.1" time="17.698">
+<testcase classname="Site Interaction Testing" name="Select a checkbox - #1.1" time="26.001">
 <system-out><![CDATA[
 Given I navigate to the website.............................................passed
 When I select the "Home" checkbox...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Site Interaction Testing" name="Verify radio button selection - #1.1" time="17.804">
+<testcase classname="Site Interaction Testing" name="Verify radio button selection - #1.1" time="23.811">
+<system-out><![CDATA[
+Given I navigate to the website.............................................passed
+When I select the "Yes" radio button........................................passed
+Then The "Yes" radio button should be selected..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Site Interaction Testing" name="Verify radio button selection - #1.2" time="28.927">
 <system-out><![CDATA[
 Given I navigate to the website.............................................passed
 When I select the "Impressive" radio button.................................passed
 Then The "Impressive" radio button should be selected.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of domain login" name="Test the banking operations in customers login" time="15.993">
+<testcase classname="Test the functionality of domain login" name="Test the banking operations in customers login" time="29.275">
 <system-out><![CDATA[
 Given I enter the url of domains............................................passed
 When I enter customers credentials..........................................passed
 Then I can login domains successfully.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of domain login" name="Test the login operations in customer login" time="10.023">
+<testcase classname="Test the functionality of domain login" name="Test the login operations in customer login" time="11.851">
 <system-out><![CDATA[
 Given I enter the shops login url of domain.................................passed
 When I enter customer login credential......................................passed
 Then I can login shops successfully.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of domain login" name="Test the login operations in customer login" time="10.802">
+<testcase classname="Test the functionality of domain login" name="Test the login operations in customer login" time="19.465">
 <system-out><![CDATA[
 Given I enter the shop login url of domain..................................passed
 When I enter customer login credentials.....................................passed
 Then I can login shop successfully..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of domain login" name="Test the banking operations in customer login" time="15.455">
+<testcase classname="Test the functionality of domain login" name="Test the banking operations in customer login" time="20.672">
 <system-out><![CDATA[
 Given I enter the url of domain.............................................passed
 When I enter customer credentials...........................................passed
 Then I can login domain successfully........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of domain login" name="Test the web shop operations in customer login" time="10.115">
+<testcase classname="Test the functionality of domain login" name="Test the web shop operations in customer login" time="11.264">
 <system-out><![CDATA[
 Given I enter the registration url of domain................................passed
 When I enter new customer credentials.......................................passed
 Then I can register domain successfully.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the functionality of shopping site" name="Adding an item to the cart" time="23.809">
+<testcase classname="Test the functionality of shopping site" name="Adding an item to the cart" time="27.138">
 <system-out><![CDATA[
 Given I navigate to the shopping page.......................................passed
 When I select a product.....................................................passed
