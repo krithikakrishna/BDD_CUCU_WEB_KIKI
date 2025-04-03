@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="35.058" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-04-03T09:19:34.729702600Z">
-<testcase classname="Test the functionality of open window page" name="Test the window button operations in practice page" time="34.718">
-<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for title to be &quot;Expected Popup Title&quot;. Current title: &quot;QAClick Academy - A Testing Academy to Learn, Earn and Shine&quot; (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\KKRISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54532}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54532/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1cc2683dce5b1c5751d145c7db0894bb">
-<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "Expected Popup Title". Current title: "QAClick Academy - A Testing Academy to Learn, Earn and Shine" (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\KKRISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54532}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54532/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1cc2683dce5b1c5751d145c7db0894bb
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at stepDefinitions.WinPopupPractice.i_can_see_open_window_page_successfully(WinPopupPractice.java:45)
-	at ✽.I can see open window page successfully(file:///C:/Users/kkrishnamoorthy/GIT%20Local/BDD_CUCU_WEB_KIKI/src/test/resources/krithika_04APR_2025_Winpopup.feature:6)
-]]>
-</failure>
+<testsuite name="Cucumber" time="29.266" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-03T09:38:00.398055200Z">
+<testcase classname="Test the functionality of open window page" name="Test the open tab button operation in the practice page" time="28.882">
 <system-out><![CDATA[
-Given I enter the url of practice page......................................passed
-When I click  open window button popup......................................passed
-Then I can see open window page successfully................................failed
+Given I enter the URL of the practice page..................................passed
+When I click the open tab button............................................passed
+Then I should see the new tab opened successfully...........................passed
 ]]></system-out>
 </testcase>
 </testsuite>
