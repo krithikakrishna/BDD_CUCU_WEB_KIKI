@@ -25,8 +25,8 @@ public class PollTest {
         driver.get("https://demowebshop.tricentis.com/");
     }
 
-    @When("I have chosen the option for community poll")
-    public void i_have_choosen_the_option_for_community_poll() {
+    @When("I have chosen the option for community polls")
+    public void i_have_choosen_the_option_for_community_polls() {
         WebElement PollText = wait.until(ExpectedConditions.elementToBeClickable(By.id("pollanswers-1")));
         PollText.click();
     }
