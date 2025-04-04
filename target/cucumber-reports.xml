@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="26.671" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-03T13:35:07.476188Z">
-<testcase classname="Community Poll Voting" name="User votes in the community poll" time="26.44">
+<testsuite name="Cucumber" time="209.859" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-04-04T03:27:41.068909Z">
+<testcase classname="Test the functionality of open window page" name="Test the window button operations in practice page" time="92.875">
 <system-out><![CDATA[
-Given I logged into the application.........................................passed
-When I have chosen the option for community poll............................passed
-Then I can submit the vote button...........................................passed
+Given I enter the url of practice page......................................passed
+When I click  open window button popup......................................passed
+Then I can see open window page successfully................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test the functionality of open window page" name="Test the open tab button operation in the practice page" time="115.834">
+<system-out><![CDATA[
+Given I enter the URL of the practice page..................................passed
+When I click the open tab button............................................passed
+Then I should see the new tab opened successfully...........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

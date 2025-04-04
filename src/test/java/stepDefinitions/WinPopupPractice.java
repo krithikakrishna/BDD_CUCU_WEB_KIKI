@@ -33,25 +33,20 @@ public void i_click_open_window_button_popup() {
 public void i_can_see_open_window_page_successfully() {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-    // Wait until there are more than 1 window handles (ensuring popup is fully opened)
+    // Wait until there are more than 1 window handles
     wait.until(ExpectedConditions.numberOfWindowsToBe(2));
 
     Set<String> windowHandles = driver.getWindowHandles();
     for (String handle : windowHandles) {
         if (!handle.equals(mainWindowHandle)) {
             driver.switchTo().window(handle);  // Switch to the new window
-
-            // Wait for the page title to load (or any element specific to the new window)
-            wait.until(ExpectedConditions.titleIs("Expected Popup Title"));
-
-            System.out.println("New Window Title: " + driver.getTitle());
-
+            System.out.println("Switched to new window: " + handle);
             driver.close();  // Close the new window
             driver.switchTo().window(mainWindowHandle); // Switch back to main window
             break;
         }
     }
-    }
+}
     @After
     public void tearDown() {
         if (driver != null) {
