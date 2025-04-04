@@ -10,29 +10,28 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.time.Duration;
 
-public class PollTest {
-   
-   
+public class Voting {
+
     WebDriver driver = new ChromeDriver();
   
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-    @Given("I logged into the application")
-    public void i_logged_into_the_application() {
+    @Given("I logged into the applications")
+    public void i_logged_into_the_applications() {
        
 
         driver.manage().window().maximize();
         driver.get("https://demowebshop.tricentis.com/");
     }
 
-    @When("I have chosen the option for community poll")
-    public void i_have_choosen_the_option_for_community_poll() {
+    @When("I have chosen the option for community polls")
+    public void i_have_choosen_the_option_for_community_polls() {
         WebElement PollText = wait.until(ExpectedConditions.elementToBeClickable(By.id("pollanswers-1")));
         PollText.click();
     }
 
-    @Then("I can submit the vote button")
-    public void i_can_submit_the_vote_button() throws InterruptedException {
+    @Then("I can submit the voting button")
+    public void i_can_submit_the_voting_button() throws InterruptedException {
         WebElement SubmitBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='button-2 vote-poll-button']")));
         SubmitBtn.click();
 
