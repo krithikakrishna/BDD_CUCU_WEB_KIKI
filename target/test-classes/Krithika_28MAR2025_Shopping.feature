@@ -1,6 +1,4 @@
-Feature: Test the functionality of shopping site
-
- 
+Feature: Krithika_28MAR_2025_ShoppingSite
 
   Scenario: Adding an item to the cart
     Given I navigate to the shopping page

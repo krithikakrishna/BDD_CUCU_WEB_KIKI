@@ -1,9 +1,9 @@
-package pom;
+package POM;
 
 import org.openqa.selenium.By;
 
 public class shoppingpage {
-     public By productBy = By.xpath("//*[@id='maincontent']/div[3]/div/div[2]/div[5]/div/div/ol/li[1]/div/div/strong/a");
+      public By productBy = By.xpath("//*[@id='maincontent']/div[3]/div/div[2]/div[5]/div/div/ol/li[1]/div/div/strong/a");
     public By sizeOption = By.className("swatch-option");
     public By coloBy = By.cssSelector(".swatch-option.color");  // Fixed: Using CSS Selector
     public By addToCartBy = By.id("product-addtocart-button");

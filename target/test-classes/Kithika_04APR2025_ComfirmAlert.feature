@@ -1,4 +1,4 @@
-Feature: Validate alert and confirmation popups
+Feature: Krithika_04APR_2025_Confirmationpopups
 
   Scenario: Handle confirmation popup
   Given I enter the URL of the practice page for alert

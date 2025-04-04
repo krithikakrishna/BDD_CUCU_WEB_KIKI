@@ -1,4 +1,4 @@
-Feature: Test the functionality of automation panda
+Feature: Krithika_04APR_2025_Automationbookpanda
  
  Scenario: Successfully book a room
     Given Open the booking application

@@ -1,4 +1,4 @@
-Feature: Site Interaction Testing
+Feature: Krithika_28MAR2025_Site_Interaction_Testing
  
  Background: 
     Given I navigate to the website
