@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="98.821" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-04-05T06:28:36.625076700Z">
-<testcase classname="Krithika_04APR_2025_Status_Code" name="Navigate to status code page and click back button - #1.1" time="26.828">
+<testsuite name="Cucumber" time="112.077" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-04-05T06:56:59.149189Z">
+<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.1" time="22.558">
 <system-out><![CDATA[
-Given I am on the Status Codes page.........................................passed
-When I click on status code "200"...........................................passed
-Then I should be navigated to the status code "200" page....................passed
-And I click the back link...................................................passed
-Then I should be navigated back to the Status Codes page....................passed
+Given I am on the Key Press page............................................passed
+When I press the "TAB" key..................................................passed
+Then I should see the message "You Entered: TAB"............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Krithika_04APR_2025_Status_Code" name="Navigate to status code page and click back button - #1.2" time="24.519">
+<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.2" time="21.868">
 <system-out><![CDATA[
-Given I am on the Status Codes page.........................................passed
-When I click on status code "301"...........................................passed
-Then I should be navigated to the status code "301" page....................passed
-And I click the back link...................................................passed
-Then I should be navigated back to the Status Codes page....................passed
+Given I am on the Key Press page............................................passed
+When I press the "ENTER" key................................................passed
+Then I should see the message "You Entered: ENTER"..........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Krithika_04APR_2025_Status_Code" name="Navigate to status code page and click back button - #1.3" time="24.461">
+<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.3" time="22.45">
 <system-out><![CDATA[
-Given I am on the Status Codes page.........................................passed
-When I click on status code "404"...........................................passed
-Then I should be navigated to the status code "404" page....................passed
-And I click the back link...................................................passed
-Then I should be navigated back to the Status Codes page....................passed
+Given I am on the Key Press page............................................passed
+When I press the "ESCAPE" key...............................................passed
+Then I should see the message "You Entered: ESCAPE".........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Krithika_04APR_2025_Status_Code" name="Navigate to status code page and click back button - #1.4" time="22.724">
+<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.4" time="22.725">
 <system-out><![CDATA[
-Given I am on the Status Codes page.........................................passed
-When I click on status code "500"...........................................passed
-Then I should be navigated to the status code "500" page....................passed
-And I click the back link...................................................passed
-Then I should be navigated back to the Status Codes page....................passed
+Given I am on the Key Press page............................................passed
+When I press the "ALT" key..................................................passed
+Then I should see the message "You Entered: ALT"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.5" time="22.12">
+<system-out><![CDATA[
+Given I am on the Key Press page............................................passed
+When I press the "SHIFT" key................................................passed
+Then I should see the message "You Entered: SHIFT"..........................passed
 ]]></system-out>
 </testcase>
 </testsuite>
