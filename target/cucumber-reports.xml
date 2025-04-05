@@ -1,38 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="112.077" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-04-05T06:56:59.149189Z">
-<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.1" time="22.558">
+<testsuite name="Cucumber" time="46.13" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-04-05T10:58:59.712917600Z">
+<testcase classname="Krithika_05APR_2025_Drag_Drop_functionality" name="Drag box A and drop onto box B" time="23.628">
 <system-out><![CDATA[
-Given I am on the Key Press page............................................passed
-When I press the "TAB" key..................................................passed
-Then I should see the message "You Entered: TAB"............................passed
+Given I am on the Drag and Drop page........................................passed
+When I drag element "A" and drop it onto element "B"........................passed
+Then element "A" should be in position of "B"...............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.2" time="21.868">
+<testcase classname="Krithika_05APR_2025_Drag_Drop_functionality" name="Drag box B and drop onto box A" time="22.206">
 <system-out><![CDATA[
-Given I am on the Key Press page............................................passed
-When I press the "ENTER" key................................................passed
-Then I should see the message "You Entered: ENTER"..........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.3" time="22.45">
-<system-out><![CDATA[
-Given I am on the Key Press page............................................passed
-When I press the "ESCAPE" key...............................................passed
-Then I should see the message "You Entered: ESCAPE".........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.4" time="22.725">
-<system-out><![CDATA[
-Given I am on the Key Press page............................................passed
-When I press the "ALT" key..................................................passed
-Then I should see the message "You Entered: ALT"............................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.5" time="22.12">
-<system-out><![CDATA[
-Given I am on the Key Press page............................................passed
-When I press the "SHIFT" key................................................passed
-Then I should see the message "You Entered: SHIFT"..........................passed
+Given I am on the Drag and Drop page........................................passed
+When I drag element "B" and drop it onto element "A"........................passed
+Then element "B" should be in position of "A"...............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

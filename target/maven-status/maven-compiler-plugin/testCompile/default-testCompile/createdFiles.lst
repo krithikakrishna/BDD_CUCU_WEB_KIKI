@@ -8,7 +8,6 @@ stepDefinitions\AlertPopupCheck.class
 stepDefinitions\OpenTabStepDefinitions.class
 stepDefinitions\WinPopupPractice.class
 POM\shoppingpage.class
-stepDefinitions\PollTest.class
 stepDefinitions\registration.class
 stepDefinitions\shopsteps.class
 stepDefinitions\demoqasets.class
