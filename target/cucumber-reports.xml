@@ -1,137 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="593.92" tests="18" skipped="0" failures="0" errors="0" timestamp="2025-04-04T07:49:01.698332900Z">
-<testcase classname="Krithika_04APR_2025_Confirmationpopups" name="Handle confirmation popup" time="31.479">
+<testsuite name="Cucumber" time="112.077" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-04-05T06:56:59.149189Z">
+<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.1" time="22.558">
 <system-out><![CDATA[
-Given I enter the URL of the practice page for alert........................passed
-When I enter "Krithika" in the text.........................................passed
-And I click on the confirm button...........................................passed
-Then I handle the confirmation popup........................................passed
+Given I am on the Key Press page............................................passed
+When I press the "TAB" key..................................................passed
+Then I should see the message "You Entered: TAB"............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Krithika_04APR_2025_Community_Voting" name="User votes in the community poll" time="25.704">
+<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.2" time="21.868">
 <system-out><![CDATA[
-Given I logged into the application.........................................passed
-When I have chosen the option for community poll............................passed
-Then I can submit the vote button...........................................passed
+Given I am on the Key Press page............................................passed
+When I press the "ENTER" key................................................passed
+Then I should see the message "You Entered: ENTER"..........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Krithika_04APR_2025_Alertpopup" name="Handle Alert popup" time="28.046">
+<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.3" time="22.45">
 <system-out><![CDATA[
-Given I enter the URL of the practice page for confirmation.................passed
-When I enter "Krishna" in the textbox.......................................passed
-And I click on the alert button.............................................passed
-Then I handle the alert popup...............................................passed
+Given I am on the Key Press page............................................passed
+When I press the "ESCAPE" key...............................................passed
+Then I should see the message "You Entered: ESCAPE".........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Krithika_28MAR_2025_Automation_bookstore" name="Test the filter  operations in automation bookstore" time="26.703">
+<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.4" time="22.725">
 <system-out><![CDATA[
-Given I enter the url of bookstore..........................................passed
-When I search books.........................................................passed
-Then I can retrive books successfully.......................................passed
+Given I am on the Key Press page............................................passed
+When I press the "ALT" key..................................................passed
+Then I should see the message "You Entered: ALT"............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Krithika_04APR_2025_Automationbookpanda" name="Successfully book a room" time="28.094">
+<testcase classname="Krithika_05APR_2025_Status_Code" name="Verify key press events - #1.5" time="22.12">
 <system-out><![CDATA[
-Given Open the booking application..........................................passed
-When select the room........................................................passed
-And select the date.........................................................passed
-And Enter the details.......................................................passed
-Then Book the ticket........................................................passed
-And Confirm the booking.....................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_28MAR2025_Site_Interaction_Testing" name="Verify text box functionality - #1.1" time="46.128">
-<system-out><![CDATA[
-Given I navigate to the website.............................................passed
-When I enter "John Doe" in the name text box................................passed
-And I enter "john.doe@example.com" in the email text box....................passed
-Then The text boxes should contain the entered values "John Doe" and "john.doe@example.com".passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_28MAR2025_Site_Interaction_Testing" name="Verify text box functionality - #1.2" time="34.186">
-<system-out><![CDATA[
-Given I navigate to the website.............................................passed
-When I enter "Alice Ray" in the name text box...............................passed
-And I enter "alice.ray@gmail.com" in the email text box.....................passed
-Then The text boxes should contain the entered values "Alice Ray" and "alice.ray@gmail.com".passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_28MAR2025_Site_Interaction_Testing" name="Select a checkbox - #1.1" time="34.429">
-<system-out><![CDATA[
-Given I navigate to the website.............................................passed
-When I select the "Home" checkbox...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_28MAR2025_Site_Interaction_Testing" name="Verify radio button selection - #1.1" time="42.847">
-<system-out><![CDATA[
-Given I navigate to the website.............................................passed
-When I select the "Yes" radio button........................................passed
-Then The "Yes" radio button should be selected..............................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_28MAR2025_Site_Interaction_Testing" name="Verify radio button selection - #1.2" time="32.611">
-<system-out><![CDATA[
-Given I navigate to the website.............................................passed
-When I select the "Impressive" radio button.................................passed
-Then The "Impressive" radio button should be selected.......................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_28MAR_2025_Domainlogin" name="Test the banking operations in customers login" time="35.608">
-<system-out><![CDATA[
-Given I enter the url of domains............................................passed
-When I enter customers credentials..........................................passed
-Then I can login domains successfully.......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_28MAR_ShopURL" name="Test the login operations in customer login" time="29.45">
-<system-out><![CDATA[
-Given I enter the shops login url of domain.................................passed
-When I enter customer login credential......................................passed
-Then I can login shops successfully.........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_28MAR_2025_Customer_login" name="Test the login operations in customer login" time="29.16">
-<system-out><![CDATA[
-Given I enter the shop login url of domain..................................passed
-When I enter customer login credentials.....................................passed
-Then I can login shop successfully..........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_28MAR_2025_PracticalTest" name="Test the banking operations in customer login" time="34.744">
-<system-out><![CDATA[
-Given I enter the url of domain.............................................passed
-When I enter customer credentials...........................................passed
-Then I can login domain successfully........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_28MAR_2025_RegistrationTest" name="Test the web shop operations in customer login" time="27.139">
-<system-out><![CDATA[
-Given I enter the registration url of domain................................passed
-When I enter new customer credentials.......................................passed
-Then I can register domain successfully.....................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_28MAR_2025_ShoppingSite" name="Adding an item to the cart" time="45.262">
-<system-out><![CDATA[
-Given I navigate to the shopping page.......................................passed
-When I select a product.....................................................passed
-And I choose the size, color, and quantity..................................passed
-And I add the product to the cart...........................................passed
-Then I should be redirected to the shopping cart page.......................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_04APR_2025_Winpopup" name="Test the window button operations in practice page" time="27.177">
-<system-out><![CDATA[
-Given I enter the url of practice page......................................passed
-When I click  open window button popup......................................passed
-Then I can see open window page successfully................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_04APR_2025_Winpopup" name="Krithika_04APR_2025_Tabpopup" time="34.805">
-<system-out><![CDATA[
-Given I enter the URL of the practice page..................................passed
-When I click the open tab button............................................passed
-Then I should see the new tab opened successfully...........................passed
+Given I am on the Key Press page............................................passed
+When I press the "SHIFT" key................................................passed
+Then I should see the message "You Entered: SHIFT"..........................passed
 ]]></system-out>
 </testcase>
 </testsuite>
