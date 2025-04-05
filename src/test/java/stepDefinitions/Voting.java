@@ -30,8 +30,8 @@ public class Voting {
         PollText.click();
     }
 
-    @Then("I can submit the voting button")
-    public void i_can_submit_the_voting_button() throws InterruptedException {
+    @Then("I can submit the voting buttons")
+    public void i_can_submit_the_voting_buttons() throws InterruptedException {
         WebElement SubmitBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='button-2 vote-poll-button']")));
         SubmitBtn.click();
 
