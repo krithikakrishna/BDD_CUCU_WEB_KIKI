@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="46.13" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-04-05T10:58:59.712917600Z">
-<testcase classname="Krithika_05APR_2025_Drag_Drop_functionality" name="Drag box A and drop onto box B" time="23.628">
+<testsuite name="Cucumber" time="31.066" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-06T13:19:27.760094Z">
+<testcase classname="Krithika_05APR_2025_HorizontalSlider" name="Verify slider updates the displayed value correctly" time="30.84">
 <system-out><![CDATA[
-Given I am on the Drag and Drop page........................................passed
-When I drag element "A" and drop it onto element "B"........................passed
-Then element "A" should be in position of "B"...............................passed
-]]></system-out>
-</testcase>
-<testcase classname="Krithika_05APR_2025_Drag_Drop_functionality" name="Drag box B and drop onto box A" time="22.206">
-<system-out><![CDATA[
-Given I am on the Drag and Drop page........................................passed
-When I drag element "B" and drop it onto element "A"........................passed
-Then element "B" should be in position of "A"...............................passed
+Given I open the slider webpage.............................................passed
+When I move the slider to "0.5".............................................passed
+Then I should see the displayed value as "0.5"..............................passed
+When I move the slider to "2.5".............................................passed
+Then I should see the displayed value as "2.5"..............................passed
+When I move the slider to "5"...............................................passed
+Then I should see the displayed value as "5"................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
