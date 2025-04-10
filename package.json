@@ -1,0 +1,22 @@
+{
+  "name": "bdd_cucu_web_kiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krithikakrishna/BDD_CUCU_WEB_KIKI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krithikakrishna/BDD_CUCU_WEB_KIKI/issues"
+  },
+  "homepage": "https://github.com/krithikakrishna/BDD_CUCU_WEB_KIKI#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0"
+  }
+}
