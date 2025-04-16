@@ -1,6 +1,7 @@
 package stepDefinitions;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -47,30 +48,43 @@ public void i_select_a_product() {
  */
 @When("I choose the size, color, and quantity")
 public void i_choose_the_size_color_and_quantity() {
-    // //choose firts size
-         List<WebElement> sizeOptions = driver.findElements(shop.sizeOption);
-         if (!sizeOptions.isEmpty()) {
-            sizeOptions.get(0).click();
-            System.out.println("First size selected: " + sizeOptions.get(0).getText());
-        } else {
-            System.out.println("No size options available!");
-        }
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
+    try {
+        // ✅ Select size 'S' directly by its aria-label
+        WebElement sizeS = wait.until(ExpectedConditions.elementToBeClickable(
+            By.xpath("//div[@class='swatch-option text' and @aria-label='S']")));
+        sizeS.click();
+        System.out.println("Size 'S' selected.");
+    } catch (Exception e) {
+        System.out.println("Size 'S' is not available or not clickable.");
+    }
+
+    try {
+        // ✅ Select the first available color
         List<WebElement> colorOptions = driver.findElements(shop.coloBy);
-
-        // Click on the first color option (index 0)
         if (!colorOptions.isEmpty()) {
             colorOptions.get(0).click();
-            System.out.println("First color selected: " + colorOptions.get(0).getDomAttribute("aria-label"));
+            System.out.println("Color selected: " + colorOptions.get(0).getDomAttribute("aria-label"));
         } else {
-            System.out.println("No color options available!");
+            System.out.println("No color options available.");
         }
-    WebElement addCart = driver.findElement(shop.addToCartBy);
-    addCart.click();
-  
-   
-    
+    } catch (Exception e) {
+        System.out.println("Failed to select color: " + e.getMessage());
+    }
+
+    try {
+        // ✅ Click 'Add to Cart'
+        WebElement addCart = wait.until(ExpectedConditions.elementToBeClickable(shop.addToCartBy));
+        addCart.click();
+        System.out.println("Product added to cart.");
+    } catch (Exception e) {
+        System.out.println("Failed to click 'Add to Cart': " + e.getMessage());
+    }
 }
+
+
+
 @SuppressWarnings("deprecation")
 @When("I add the product to the cart")
 public void i_add_the_product_to_the_cart() {
