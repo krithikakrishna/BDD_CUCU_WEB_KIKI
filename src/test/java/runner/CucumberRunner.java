@@ -7,7 +7,9 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
     features = "src/test/resources/features",
     glue = {"Steps", "Hooks"},
     plugin = {
-        "pretty",
+        "pretty","html:target/cucumber-reports.html",
+              "json:target/cucumber-reports.json",
+              "junit:target/cucumber-reports.xml",
         "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
     }
 )
