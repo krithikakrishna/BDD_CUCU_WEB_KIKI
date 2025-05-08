@@ -8,9 +8,9 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
     glue = {"Steps", "Hooks"},
     plugin = {
         "pretty","html:target/cucumber-reports.html",
-              "json:target/cucumber-reports.json",
-              "junit:target/cucumber-reports.xml",
-        "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
+                 "json:target/cucumber-reports.json",
+                 "junit:target/cucumber-reports.xml",
+                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
     }
 )
 public class CucumberRunner extends AbstractTestNGCucumberTests{
