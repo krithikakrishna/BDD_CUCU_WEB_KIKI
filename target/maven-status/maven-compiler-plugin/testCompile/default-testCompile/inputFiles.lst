@@ -1,1 +1,6 @@
-C:\Users\kkrishnamoorthy\GIT Local\book-store-automation-api\src\test\java\runner\RunnerTest.java
+C:\Users\kkrishnamoorthy\GIT Local\book-store-automation-api\src\test\java\api\BooksApi.java
+C:\Users\kkrishnamoorthy\GIT Local\book-store-automation-api\src\test\java\api\UserApi.java
+C:\Users\kkrishnamoorthy\GIT Local\book-store-automation-api\src\test\java\data\BookStoreData.java
+C:\Users\kkrishnamoorthy\GIT Local\book-store-automation-api\src\test\java\Hooks\CucumberHooks.java
+C:\Users\kkrishnamoorthy\GIT Local\book-store-automation-api\src\test\java\runner\CucumberRunner.java
+C:\Users\kkrishnamoorthy\GIT Local\book-store-automation-api\src\test\java\stepDefinitions\UserSteps.java

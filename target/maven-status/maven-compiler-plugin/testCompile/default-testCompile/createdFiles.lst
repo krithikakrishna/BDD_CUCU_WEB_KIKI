@@ -1,1 +1,6 @@
-runner\RunnerTest.class
+stepDefinitions\UserSteps.class
+api\UserApi.class
+runner\CucumberRunner.class
+Hooks\CucumberHooks.class
+data\BookStoreData.class
+api\BooksApi.class
